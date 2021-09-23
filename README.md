@@ -1,29 +1,93 @@
-# README #
+# ApplicationDevelopment
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This Repository is dedicated to our project in Application Development subject
 
-### What is this repository for? ###
+## Installation
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Please check the official laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/5.4/installation#installation)
 
-### How do I get set up? ###
+Alternative installation is possible without local dependencies relying on [Docker](#docker).
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Clone the repository
 
-### Contribution guidelines ###
+```bash
+    git clone git@github.com:Barongobber/ApplicationDevelopment.git
+```
 
-* Writing tests
-* Code review
-* Other guidelines
+Switch to the repo folder
 
-### Who do I talk to? ###
+```bash
+    cd ApplicationDevelopment
+```
 
-* Repo owner or admin
-* Other community or team contact
+Install all the dependencies using composer
+
+```bash
+    composer install
+```
+
+```Google Api
+    composer require google/apiclient
+```
+
+```Flysystem Adapter for Google Drive
+    composer require nao-pon/flysystem-google-drive:~1.1
+```
+
+```PHP Mailer
+    composer require phpmailer/phpmailer
+```
+
+Copy the example env file and make the required configuration changes in the .env file
+
+```bash
+    cp .env.example .env
+```
+
+Generate a new application key
+
+```bash
+    php artisan key:generate
+```
+
+Run the database migrations (**Set the database connection in .env before migrating**)
+
+```bash
+    php artisan migrate
+```
+
+Seed the database with seeder (See first if the file in database/seeders/DatabaseSeeder.php `run()` function is commented or not, if So uncomment it first)
+```bash
+    php artisan db:seed
+```
+
+Start the local development server
+
+```bash
+    php artisan serve
+```
+
+You can now access the server at <http://localhost:8000>
+
+### Github branch renamed - Updating a local clone after a branch name changes
+
+After you rename a branch in a repository on GitHub, any collaborator with a local clone of the repository will need to update the clone.
+
+From the local clone of the repository on a computer, run the following commands to update the name of the default branch.
+
+```git
+
+    git branch -m OLD-BRANCH-NAME NEW-BRANCH-NAME
+    git fetch origin
+    git branch -u origin/NEW-BRANCH-NAME NEW-BRANCH-NAME
+    git remote set-head origin -a
+
+```
+
+Optionally, run the following command to remove tracking references to the old branch name.
+
+```bash
+
+ git remote prune origin
+ 
+```
