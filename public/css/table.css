@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+}
+
+button[type=submit] {
+    background-color: black;
+    border-radius: 4px;
+    padding: 3px;
+    border: 1px solid #A9A9A9;
+    color: white;
+}
+
+button[type=submit]:hover {
+    background-color: rgb(0, 191, 255, 0.2);
+    border-radius: 4px;
+    padding: 3px;
+    border: 1px solid #A9A9A9;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+input[type=text],
+input[type=email],
+input[type=date],
+select {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #A9A9A9;
+    border-radius: 4px;
+    background-color: black;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border: solid #00BFFF 1px;
+    border-radius: 10px;
+}
+
+table,
+td,
+tr,
+th {
+    margin-top: 1%;
+    color: white;
+    padding: 10px 20px;
+}
