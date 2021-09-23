@@ -10,10 +10,6 @@ Alternative installation is possible without local dependencies relying on [Dock
 
 Clone the repository
 
-```bash
-    git clone git@github.com:Barongobber/ApplicationDevelopment.git
-```
-
 Switch to the repo folder
 
 ```bash
@@ -24,18 +20,6 @@ Install all the dependencies using composer
 
 ```bash
     composer install
-```
-
-```Google Api
-    composer require google/apiclient
-```
-
-```Flysystem Adapter for Google Drive
-    composer require nao-pon/flysystem-google-drive:~1.1
-```
-
-```PHP Mailer
-    composer require phpmailer/phpmailer
 ```
 
 Copy the example env file and make the required configuration changes in the .env file
