@@ -52,6 +52,10 @@ Generate a new application key
 
 Run the database migrations (**Set the database connection in .env before migrating**)
 
+```create db on DBMS
+    create a DB called utm_connect on your DBMS (it could be Navicat or PhpMyAdmin)
+```
+
 ```bash
     php artisan migrate
 ```
