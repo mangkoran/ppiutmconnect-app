@@ -19,6 +19,7 @@ services:
             - sail
         depends_on:
             - mariadb
+            - phpmyadmin
     mariadb:
         image: 'mariadb:10'
         ports:
@@ -38,9 +39,15 @@ services:
           retries: 3
           timeout: 5s
 
+    phpmyadmin:
+        image: 'phpmyadmin:latest'
         ports:
+            - 8080:80
         networks:
             - sail
+        environment:
+            - PMA_ARBITRARY=1
+
 networks:
     sail:
         driver: bridge
