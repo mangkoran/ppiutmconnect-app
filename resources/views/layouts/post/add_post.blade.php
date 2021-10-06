@@ -100,7 +100,7 @@
               <div class="form-group row">
                 <label class="col-sm-3 col-form-label">Venue<span style="color: red;">@if (!isset($eventDesc['isView']))*@endif</span></label>
                 <div class="col-sm-9">
-                  <input name="e_venue" type="text" class="form-control" placeholder="Write event's vanue here"
+                  <input name="e_venue" type="text" class="form-control" placeholder="Write event's venue here"
                   @isset($eventDesc['event'])
                     value={{ $eventDesc['event']['event_venue'] }}
                   @endisset
