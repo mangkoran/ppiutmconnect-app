@@ -12,7 +12,7 @@ services:
     # tty: true
     environment:
       SERVICE_NAME: app
-      SERVICE_TAGS: dev
+      SERVICE_TAGS: prod
     working_dir: /var/www
     volumes:
       - ./:/var/www
@@ -48,8 +48,8 @@ services:
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
       MYSQL_USER: ${DB_USERNAME}
       MYSQL_PASSWORD: ${DB_PASSWORD}
-      SERVICE_TAGS: ${DB_DATABASE}
-      SERVICE_NAME: ${DB_DATABASE}
+      SERVICE_NAME: db
+      SERVICE_TAGS: prod
     volumes:
       - dbdata:/var/lib/mysql/
       # - ./mysql/my.cnf:/etc/mysql/my.cnf
