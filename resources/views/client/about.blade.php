@@ -9,12 +9,11 @@ Insert Here
         <div class="header-head">
             <h1 class="header-title">About us</h1>
             <hr class="mb-3 mt-0 dotted-ruler width-1 border-color-white">
-            <p class="header-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      Enim sed faucibus turpis in eu mi bibendum.
-                      Habitasse platea dictumst vestibulum rhoncus est.
-                      Amet purus gravida quis blandit turpis cursus in hac habitasse.
-                      Viverra ipsum nunc aliquet bibendum enim</p>
+            <p class="header-content">
+              Perhimpunan Pelajar Indonesia in UTM (PPI UTM) or also known as International Student Society-UTM (ISS-UTM)
+              is an organization for Indonesian student who pursue their study in Universiti Teknologi Malaysia no matter degree
+              their takes.
+            </p>
         </div>
     </div>
 </section>
