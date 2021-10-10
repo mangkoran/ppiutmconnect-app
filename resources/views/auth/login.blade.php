@@ -40,6 +40,11 @@
                                             {{ session()->get('message') }}
                                         </div>
                                      @endif
+                                     @if (session()->has('errorLogin'))
+                                     <div class="alert alert-danger">
+                                         {{ session()->get('errorLogin') }}
+                                     </div>
+                                  @endif
                                      </div>
                                      <form class="user" method="POST" action="{{ route('check_user') }}">
                                          @csrf
@@ -99,7 +104,7 @@
 
      </div>
         <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
+        {{-- <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
                 <!-- Modal content-->
                 <div class="modal-content">
@@ -123,7 +128,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
