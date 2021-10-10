@@ -154,7 +154,6 @@
         </div>
     </div>
 </div>
-<iframe srcdoc="{{session()->get('design_email')}}" frameborder="0"></iframe>
 
 @endsection
 
