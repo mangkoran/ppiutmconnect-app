@@ -18,7 +18,7 @@ class CreateNewsTable extends Migration
             $table->enum('news_category', ['Sport', 'Academic', 'Arts or Music', 'Strategic Studies', 'Human Dev']);
             $table->string('news_title');
             $table->string('news_content');
-            $table->string('posted_on');
+            $table->date('posted_on');
             $table->string('news_pic1');
             $table->string('news_pic2')->nullable();
             $table->string('news_pic3')->nullable();
