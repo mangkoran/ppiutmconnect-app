@@ -120,6 +120,9 @@ Content
                 <div class="mx-auto">
                   <a href="{{url('user-editprofile')}}"><button class="btn btn-std">Edit Profile</button></a>
                 </div>
+                <div class="mx-auto">
+                    <a href="{{url('user-changepass')}}"><button class="btn btn-std">Change Password</button></a>
+                </div>
             </div>
         </div>
     </div>

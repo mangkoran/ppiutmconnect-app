@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
   <!-- CSS -->
   <link rel="stylesheet" href="{{asset('projectad/css/owl.carousel.min.css')}}">
-  <link rel="stylesheet" href="{{asset('projectad/css/styles.css')}}" />
+  <link rel="stylesheet" href="{{asset('projectad/css/styles.css')}}"/>
 
 </head>
 <body>
@@ -45,7 +45,7 @@
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Organization</a>
             <div class="dropdown-menu animated--grow-in">
               <a href="{{url('user-about')}}" class="dropdown-item">About</a>
-              <a href="{{url('user-aspiration')}}" class="dropdown-item">Aspiration</a>
+              <!--<a href="{{url('user-aspiration')}}" class="dropdown-item">Aspiration</a>-->
             </div>
           </li>
         </ul>
