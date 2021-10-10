@@ -102,7 +102,7 @@
                                             </p>
                                             <div class="news-preview-details ml-auto">
                                                 <span class="post-details"> Posted by <a class="author-link" href="">Lorem
-                                                        Ipsum</a> {{$news->posted_on}}</span>
+                                                        Ipsum</a> on {{$news->posted_on}}</span>
                                             </div>
                                         </div>
                                     </div>
