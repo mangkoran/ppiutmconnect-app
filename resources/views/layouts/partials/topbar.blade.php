@@ -81,7 +81,7 @@
                     <a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#">
                         <span class="d-none d-lg-inline mr-2 text-gray-600 small">
                             {{ Auth::user()->name }}
-                        </span><img class="border rounded-circle img-profile" src="{{ url('images/avatars/avatar1.jpeg') }}"></a>
+                        </span><img class="border rounded-circle img-profile" src="{{ url('images/avatars/profile.jpg') }}"></a>
                     <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in"><a class="dropdown-item"
                             href="{{url('profile')}}"><i
                                 class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Profile</a><a
