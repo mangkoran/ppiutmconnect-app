@@ -19,8 +19,8 @@
                         class="fa fa-pencil-square"></i><span>Feedback Management</span></a></li>
             <li class="nav-item"><a class="nav-link" href="{{url('listBlasting')}}"><i
                         class="fas fa-envelope-square"></i><span>Email Blasting</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="{{url('academic')}}"><i
-                        class="far fa-newspaper"></i><span>Academic Library</span></a></li>
+            <li class="nav-item"><a class="nav-link" style="color: rgb(170, 141, 141)" href="{{url('academic')}}" onclick="return false"><i
+                        class="far fa-newspaper"></i><span>Academic Library *Under Maintenance</span></a></li>
             <li class="nav-item"><a class="nav-link" href="{{url('user-home')}}"><i
                             class="fas fa-user-circle"></i><span>Switch to Member</span></a></li>
 
