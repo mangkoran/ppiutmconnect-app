@@ -13,7 +13,7 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-lg-6 text-column">
-                                    <h1 class="carousel-heading">Get the latest news update and announcements!</h1>
+                                    <h1 class="carousel-heading">Get the latest new update and announcements!</h1>
                                 </div>
                                 <div class="col-lg-6 img-column">
                                     <a href='https://pngtree.com/so/news-clipart' style="pointer-events:none"><img
@@ -53,7 +53,7 @@
                                             src="{{ asset('projectad/assets/img/books.svg') }}" /></a>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 button-column">
-                                    <a class="buttons" href="#academics"><button class="btn btn-red btn-lg btn-block">Check
+                                    <a class="buttons" href="{{ url('user-academic') }}"><button class="btn btn-red btn-lg btn-block">Check
                                             out academic support</button></a>
                                 </div>
                             </div>
@@ -80,6 +80,7 @@
                             style="display: block;">Announcements</span></h2>
                     <hr class="separator" />
                 </div>
+            </div>
             </div>
 
             <div id="carouselNews" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="hover">
@@ -111,8 +112,7 @@
                             @endif
                             @endforeach
 
-                        </div>
-                    </div>
+                        
 
                 </div>
             </div>
