@@ -77,6 +77,11 @@ Route::middleware(['auth'])->group(function () {
     });
     Route::post('/updateProfile', [MemberController::class, 'updateProfile'])->name('updateProfile');
 
+    Route::post('/changepass', [MemberController::class, 'changepass'])->name('changepass');
+    Route::get('/user-changepass', function(){
+        return view('client.changepass');
+    });
+
     Route::get('/user-signup', function(){
         return view('client.signup');
     });
