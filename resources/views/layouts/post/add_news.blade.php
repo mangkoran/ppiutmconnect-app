@@ -164,7 +164,7 @@
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-sm-3 col-form-label">news Details<span style="color: red;">@if (!isset($newsDesc['isView']))*@endif</span></label>
+                <label class="col-sm-3 col-form-label">News Details<span style="color: red;">@if (!isset($newsDesc['isView']))*@endif</span></label>
                 <div class="col-sm-9">
                   <textarea name="news_content" rows="8" type="text" class="form-control" placeholder="Write details of the news here"  @if (isset($newsDesc['isView'])) disabled @endif  required>@isset($newsDesc['news']){{ $newsDesc['news']['news_content'] }}@endisset</textarea>
                 </div>
