@@ -28,63 +28,63 @@
         </div>
       </div>
         <div class="table-responsive">
-          <form method="POST" action="{{ route('changeGrant') }}" enctype="multipart/form-data">
-          @csrf
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-              <thead>
-                <tr align="center">
-                  <th>Name</th>
-                  <th>Matric No</th>
-                  <th>Program Code</th>
-                  <th>Role</th>
-                  <th>Action Button</th>
-                </tr>
-              </thead>
-              <tbody>
+          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+              <tr align="center">
+                <th>Name</th>
+                <th>Matric No</th>
+                <th>Program Code</th>
+                <th>Role</th>
+                <th>Action Button</th>
+              </tr>
+            </thead>
+            <tbody>
               @foreach ($members as $key => $member)
-                <tr>
-                  <td>{{ $member->name }}</td>
-                  <td align="center">{{ $member->matrix_card }}</td>
-                  <td align="center">{{ $member->program_code }}</td>
-                  <td align="center">
+              <tr>
+                <td>{{ $member->name }}</td>
+                <td align="center">{{ $member->matrix_card }}</td>
+                <td align="center">{{ $member->program_code }}</td>
+                <td align="center">
+                  <form id="f_{{ $member->matrix_card }}" method="POST" action="{{ route('changeGrant') }}" enctype="multipart/form-data">
                     @if (Auth::user()->matrix_card == $member->matrix_card)
-                      <input type="hidden" name="role[]" value="{{ $member->access_grant }}">
+                    <input type="hidden" name="role[]" value="{{ $member->access_grant }}">
                     @endif
                     <select name="role[]" style="color: white"
                     @if (Auth::user()->matrix_card == $member->matrix_card)
                       disabled
                     @endif
                     >
-                      @if ($member->access_grant == 1)
-                        <option value='1' selected="selected">Member</option>
-                      @else
-                        <option value='1'>Member</option>
-                      @endif
-                      @if ($member->access_grant == 2)
-                        <option value='2' selected="selected">Management</option>
-                      @else
-                        <option value='2'>Management</option>
-                      @endif
-                      @if ($member->access_grant == 3)
-                        <option value='3' selected="selected">DB Admin</option>
-                      @else
-                        <option value='3'>DB Admin</option>
-                      @endif
-                    </select>
-                  </td>
-                  <input type="hidden" name="id[]" value="{{ $member->matrix_card }}">
-                  <td align="center">
-                    <button class="btn-light" name="submit" value="{{ $key }}" type="submit"
-                    @if (Auth::user()->matrix_card == $member->matrix_card)
-                      disabled
+                    @if ($member->access_grant == 1)
+                    <option value='1' selected="selected">Member</option>
+                    @else
+                    <option value='1'>Member</option>
                     @endif
-                    >Apply Changes</button>
-                  </td>
-                </tr>
+                    @if ($member->access_grant == 2)
+                    <option value='2' selected="selected">Management</option>
+                    @else
+                    <option value='2'>Management</option>
+                    @endif
+                    @if ($member->access_grant == 3)
+                    <option value='3' selected="selected">DB Admin</option>
+                    @else
+                    <option value='3'>DB Admin</option>
+                    @endif
+                    </select>
+                  </form>
+                </td>
+                <input form="f_{{ $member->matrix_card }}" type="hidden" name="id" value="{{ $member->matrix_card }}">
+                <td align="center">
+                  <button form="f_{{ $member->matrix_card }}" class="btn-light" name="submit" value="{{ $key }}" type="submit"
+                  @if (Auth::user()->matrix_card == $member->matrix_card)
+                    disabled
+                  @endif
+                  >Apply Changes</button>
+                </td>
+              </tr>
               @endforeach
-              </tbody>
-            </table>
-          </form>
+            </tbody>
+          </table>
+
         </div>
       </div>
     </div>

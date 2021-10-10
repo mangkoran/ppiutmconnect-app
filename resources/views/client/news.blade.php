@@ -44,7 +44,7 @@
                   {{$news->news_content}}</p>
                 </div>
                 <div class="news-preview-details ml-auto">
-                  <span class="post-details"> Posted by <a class="author-link" href="">Lorem Ipsum</a> on {{$news->posted_on}}</span>
+                  <span class="post-details"> Posted on {{$news->posted_on}}</span>
                   <span class="post-details"> Category: <a class="category-anchor" href="">{{$news->news_category}}</a></span>
                 </div>
               </div>

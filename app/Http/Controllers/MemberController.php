@@ -7,6 +7,7 @@ use App\Models\News;
 use App\Models\Member;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class MemberController extends Controller
 {
@@ -79,15 +80,38 @@ class MemberController extends Controller
                     if(trim($first_row[$j] == '')){
                         break;
                     }
-                    $temp_member[$i]->{trim($first_row[$j])} = $temp_array[$j];
+                    else if (trim($first_row[$j] == 'password')) {
+                        $temp_member[$i]->{trim($first_row[$j])} = bcrypt($temp_array[$j]);
+                    }
+                    else {
+                        $temp_member[$i]->{trim($first_row[$j])} = $temp_array[$j];
+                    }
                 }
                 $temp_member[$i]->access_grant = 1;
-                $temp_member[$i]->password = bcrypt("ppiutm123");
-
                 $temp_member[$i]->save();
             }
 
             return redirect('home');
         }
+    }
+
+    public function changepass(Request $r)
+    {
+        $r->validate([
+          'current_password' => 'required',
+          'password' => 'required|string|confirmed',
+          'password_confirmation' => 'required',
+        ]);
+
+        $user = Auth::user();
+
+        if (!Hash::check($r->current_password, $user->password)) {
+            return back()->with('error', 'Current password does not match!');
+        }
+
+        $user->password = Hash::make($r->password);
+        $user->save();
+
+        return back()->with('success', 'Password successfully changed!');
     }
 }
