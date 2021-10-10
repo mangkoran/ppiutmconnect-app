@@ -80,7 +80,7 @@ class LoginController extends Controller
 
             return redirect('home');
         } else {
-            return redirect('login');
+            return back()->with('errorLogin', 'Login Failed, Please Try Again!');
         }
     }
 }
