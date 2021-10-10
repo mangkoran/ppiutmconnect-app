@@ -14,15 +14,18 @@ Insert Here
                     Join us on Discord
                     <div class="spacer mb-2"></div>
                     <button class="btn discord-btn">
-                        <a href="#"><img class="discord-img" src="{{asset('projectad/assets/img/discord.png')}}" alt=""></a>
+                        <a href="https://discord.gg/WDqQY9tS" target="_blank"><img class="discord-img" src="{{asset('projectad/assets/img/discord.png')}}" alt=""></a>
                     </button>
                 </div>
                 <div class="col-6 mb-3">
                     Access our E-Library
                     <div class="spacer mb-2"></div>
                     <button class="btn drive-btn">
-                        <a href="{{url('user-elibrary')}}"><i class="fab fa-google-drive"></i>  E-Library</a>
+                        {{-- <a href="{{url('user-elibrary')}}"><i class="fab fa-google-drive"></i>  E-Library</a> --}}
+                        <a href="http://bit.ly/E-LIBRARYPPIUTM2020-2021" target="_blank"><i class="fab fa-google-drive"></i>  E-Library</a>
                     </button>
+                    <br>
+                    <b>Note: Please use your Graduate email to access our library</b>
                 </div>
             </div>
         </div>
