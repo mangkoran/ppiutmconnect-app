@@ -36,7 +36,7 @@
                   <option value="Volunteer">Volunteer</option>
                   <option value="Entrepreneurship">Entrepreneurship</option>
                   <option value="Leadership">Leadership</option>
-                  <option value="Sosial & Public">Sosial & Public</option>
+                  <option value="Social & Public">Social & Public</option>
                   <option value="Internal Development">Internal Development</option>
                 </select>
               </div>
