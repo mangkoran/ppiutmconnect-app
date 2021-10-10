@@ -45,7 +45,7 @@
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Organization</a>
             <div class="dropdown-menu animated--grow-in">
               <a href="{{url('user-about')}}" class="dropdown-item">About</a>
-              <a href="{{url('user-aspiration')}}" class="dropdown-item">Aspiration</a>
+              <!--<a href="{{url('user-aspiration')}}" class="dropdown-item">Aspiration</a>-->
             </div>
           </li>
         </ul>
