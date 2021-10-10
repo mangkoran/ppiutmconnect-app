@@ -1559,6 +1559,14 @@ form.sign-in-form {
   z-index: -1;
 }
 
+/* css for change password page */
+
+#change-pass{
+  background-image: repeating-linear-gradient(to right, #bb151e, #E6202B,#E6202B, #E6202B, #bb151e);
+  box-sizing: border-box;
+  padding: 150px 15vw 10vh 15vw;
+}
+
 /********Failed css********/
 /* .news-img-bg{
   position: absolute;
