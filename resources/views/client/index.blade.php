@@ -13,7 +13,7 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-lg-6 text-column">
-                                    <h1 class="carousel-heading">Get the latest news update and announcements!</h1>
+                                    <h1 class="carousel-heading">Get the latest new update and announcements!</h1>
                                 </div>
                                 <div class="col-lg-6 img-column">
                                     <a href='https://pngtree.com/so/news-clipart' style="pointer-events:none"><img
@@ -81,6 +81,7 @@
                     <hr class="separator" />
                 </div>
             </div>
+            </div>
 
             <div id="carouselNews" class="carousel slide" data-ride="carousel" data-interval="10000" data-pause="hover">
                 <div class="carousel-inner">
@@ -111,8 +112,7 @@
                             @endif
                             @endforeach
 
-                        </div>
-                    </div>
+                        
 
                 </div>
             </div>
