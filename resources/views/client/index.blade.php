@@ -53,7 +53,7 @@
                                             src="{{ asset('projectad/assets/img/books.svg') }}" /></a>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 button-column">
-                                    <a class="buttons" href="#academics"><button class="btn btn-red btn-lg btn-block">Check
+                                    <a class="buttons" href="{{ url('user-academic') }}"><button class="btn btn-red btn-lg btn-block">Check
                                             out academic support</button></a>
                                 </div>
                             </div>
@@ -102,7 +102,7 @@
                                             </p>
                                             <div class="news-preview-details ml-auto">
                                                 <span class="post-details"> Posted by <a class="author-link" href="">Lorem
-                                                        Ipsum</a> on 31 - 02 - 2069</span>
+                                                        Ipsum</a> on {{$news->posted_on}}</span>
                                             </div>
                                         </div>
                                     </div>
