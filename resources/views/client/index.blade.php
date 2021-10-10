@@ -101,7 +101,7 @@
                                             </p>
                                             <div class="news-preview-details ml-auto">
                                                 <span class="post-details"> Posted by <a class="author-link" href="">Lorem
-                                                    Ipsum</a> on 31 - 02 - 2069</span>
+                                                        Ipsum</a> on 31 - 02 - 2069</span>
                                             </div>
                                         </div>
                                     </div>
