@@ -101,8 +101,7 @@
                                                 <a class="read-more" href="">...Read more</a>
                                             </p>
                                             <div class="news-preview-details ml-auto">
-                                                <span class="post-details"> Posted by <a class="author-link" href="">Lorem
-                                                        Ipsum</a> on {{$news->posted_on}}</span>
+                                                <span class="post-details"> Posted on {{$news->posted_on}}</span>
                                             </div>
                                         </div>
                                     </div>
