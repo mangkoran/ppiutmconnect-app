@@ -160,7 +160,7 @@
                     <option value="Human Dev"@isset($newsDesc['news']) @if($newsDesc['news']['news_category'] == "Human Dev")
                       selected
                     @endif @endisset>Human Development</option>
-                    <option value="Social & Public"@isset($newsDesc['news']) @if($newsDesc['news']['news_category'] == "Social & Publicv")
+                    <option value="Social & Public"@isset($newsDesc['news']) @if($newsDesc['news']['news_category'] == "Social & Public")
                       selected
                     @endif @endisset>Social & Public</option>
                     <option value="Internal Development"@isset($newsDesc['news']) @if($newsDesc['news']['news_category'] == "Internal Development")
