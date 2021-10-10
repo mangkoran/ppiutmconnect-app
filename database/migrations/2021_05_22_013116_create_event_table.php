@@ -16,7 +16,7 @@ class CreateEventTable extends Migration
         Schema::create('event', function (Blueprint $table) {
             $table->id('event_id')->nullable(false);
             $table->string('event_title');
-            $table->enum('event_category', ['Sport', 'Academic', 'Arts or Music', 'Strategic Studies', 'Human Dev']);
+            $table->enum('event_category', ['Sport', 'Academic', 'Arts or Music', 'Strategic Studies', 'Human Dev','Social & Public','Internal Development']);
             $table->string('event_venue');
             $table->date('posted_on');
             $table->enum('open_for', ['Participants', 'Committee']);

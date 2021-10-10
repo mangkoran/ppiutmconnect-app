@@ -72,6 +72,12 @@
                     <option value="Human Dev"@isset($eventDesc['event']) @if($eventDesc['event']['event_category'] == "Human Dev")
                       selected
                     @endif @endisset>Human Development</option>
+                    <option value="Social & Public"@isset($eventDesc['event']) @if($eventDesc['event']['event_category'] == "Social & Public")
+                      selected
+                    @endif @endisset>Social & Public</option>
+                    <option value="Internal Development"@isset($eventDesc['event']) @if($eventDesc['event']['event_category'] == "Internal Development")
+                      selected
+                    @endif @endisset>Internal Development</option>
                   </select>
                 </div>
               </div>

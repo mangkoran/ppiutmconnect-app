@@ -24,6 +24,8 @@
         <li class="nav-item"><a class="nav-link" href="">Music</a></li>
         <li class="nav-item"><a class="nav-link" href="">Strategic Studies</a></li>
         <li class="nav-item"><a class="nav-link" href="">Human Development</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Social & Public</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Internal Development</a></li>
     </ul>
     </div>
 </nav>
