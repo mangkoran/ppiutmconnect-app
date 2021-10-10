@@ -17,8 +17,8 @@ class AdminController extends Controller
 
     public function changeGrant(Request $r){
         $index = $r->submit;
-        $matrix_card = $r->id[$index];
-        $newRole = $r->role[$index];
+        $matrix_card = $r->id;
+        $newRole = $r->role[0];
 
         $user = Member::where('matrix_card', $matrix_card)
         ->update([
