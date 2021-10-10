@@ -20,7 +20,7 @@ RUN composer install --no-dev
 # # enable apache2 mod_rewrite
 # RUN a2enmod rewrite
 
-FROM php:7.3-fpm
+FROM php:8-fpm
 
 # copy composer.lock and composer.json
 # COPY composer.lock composer.json /var/www/
