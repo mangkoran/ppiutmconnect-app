@@ -158,7 +158,7 @@
                 @endif --}}
                 </label>
                 @if (isset($eventDesc['isView']))
-                <img src="{{ asset('images/event/' . $eventDesc['event']->event_id . '/' . $eventDesc['event']->event_pic2) }}" alt="">
+                <img src="{{ asset('images/event/' . $eventDesc['event']->event_id . '/' . $eventDesc['event']->event_pic1) }}" alt="">
                 @else
                 <div class="col-sm-9">
                   <input type="file" class="btn btn-primary" name="e_pic1" id=""
