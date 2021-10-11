@@ -116,7 +116,7 @@
                     <div class="news-item carousel-item">
                             <div class="row news-preview-row">
                                 @foreach ($member['news3'] as $index => $news)
-                                @if($index>1)
+                                @if($index > 3)
                                     <div class="col-lg-6 col-md-6 col-sm-6 news-preview-column">
                                         <img class="news-content-img img-fluid" src="{{ asset('images/news/' . $news->news_id . '/' . $news->news_pic1) }}"
                                             alt="news" />
@@ -140,8 +140,8 @@
                             </div>
                     </div>
                     @endif
-            
-        </div>
+            </div>
+       
         <a class="carousel-control-prev" href="#carouselNews" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
