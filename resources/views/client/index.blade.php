@@ -106,16 +106,42 @@
                                         </div>
                                     </div>
                                 </div>
-                                @if ($index == 2)
+                                @if ($index == 1)
                                 @break
                             @endif
                             @endforeach
-
-                        
-
-                </div>
+                        </div>
+                    </div>
+                    @if(count($member['news3'])>2)
+                    <div class="news-item carousel-item">
+                            <div class="row news-preview-row">
+                                @foreach ($member['news3'] as $index => $news)
+                                @if($index > 3)
+                                    <div class="col-lg-6 col-md-6 col-sm-6 news-preview-column">
+                                        <img class="news-content-img img-fluid" src="{{ asset('images/news/' . $news->news_id . '/' . $news->news_pic1) }}"
+                                            alt="news" />
+                                        <div class="text-news">
+                                            <h3 class="news-title-preview"><a
+                                                    href="{{ route('user-view-news', $news->news_id) }}">
+                                                    {{ $news->news_title }}</a></h3>
+                                            <div class="news-paragraph-preview">
+                                                <p>
+                                                    {{ $news->news_content }}
+                                                    <a class="read-more" href="">...Read more</a>
+                                                </p>
+                                                <div class="news-preview-details ml-auto">
+                                                    <span class="post-details"> Posted on {{$news->posted_on}}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endif
+                                @endforeach
+                            </div>
+                    </div>
+                    @endif
             </div>
-        </div>
+       
         <a class="carousel-control-prev" href="#carouselNews" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
