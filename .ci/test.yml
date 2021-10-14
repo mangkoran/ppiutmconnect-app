@@ -1,0 +1,4 @@
+name: 'Test Laravel app'
+runs:
+  using: 'Docker'
+  image: '../Dockerfile.test'
