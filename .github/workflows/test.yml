@@ -1,7 +1,7 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  test-laravel-app:
     runs-on: ubuntu-latest
     name: Test laravel app
     steps:
